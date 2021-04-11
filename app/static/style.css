@@ -1,0 +1,79 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    margin: 0 0 100px;
+}
+.container-fluid{
+    min-height: 100%;
+}
+
+.content-inside{
+    padding: 20px;
+    padding-bottom: 50px;
+}
+nav.navbar{
+    background-color: #302d2d;
+}
+nav.navbar a{
+    font-family: 'Changa', sans-serif;
+}
+.search{
+    text-align: center;
+}
+
+.search h1{
+    text-transform: uppercase;
+    color: #FF8C64;
+}
+
+.algo-btn{
+    background-color: #7D6B7D;
+    color: #fff;
+}
+
+.search form input{
+    width: 50%;
+}
+
+.algorithm-card{
+    text-align: center;
+}
+.algorithm-card h3{
+    text-align: left;
+    width: 80%;
+}
+
+.algorithm-card a{
+    text-decoration: none;
+    color: #7D6B7D;
+}
+
+a.algo-btn{
+    color: #fff;
+}
+
+.algorithm-card a:hover{
+    opacity: 0.7;
+}
+
+footer{
+    background-color: #302d2d;
+    color: #fff;
+    text-align: center;
+    font-family: 'Changa', sans-serif;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+footer span{
+    font-weight: bold;
+    color: #FF8C64;
+}

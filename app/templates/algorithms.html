@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}All Algorithms{% endblock %}
+
+{% block content %}
+    <div class="content-inside">
+           <div class="algorithm-card row d-flex justify-content-center my-5">
+                <h3 class="border-bottom">Algorithms</h3>
+                {% if context['algorithms'] %}
+                    {% for algorithm in context['algorithms'] %}
+                        <div class="card col-lg-3 m-2" style="width: 18rem;">
+                            <a href="#">
+                              <img style="height: 147px;" src=" {{ algorithm['url'] }}" class="card-img-top" alt="{{ algorithm['title'] }}">
+                              <div class="card-body">
+                                <h4 class="card-text">{{ algorithm['title'] }}</h4>
+                              </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+
+    </div>
+
+
+{% endblock %}
